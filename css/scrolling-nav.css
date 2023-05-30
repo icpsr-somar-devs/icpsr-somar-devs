@@ -24,3 +24,25 @@ section {
     max-width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  float: center;
+  width: 30%;
+  padding: 20px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
